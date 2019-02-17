@@ -1,0 +1,112 @@
+/* *** Containers *** */
+@mixin title-container {
+    max-width: 1100px;
+    margin: 104px auto;
+}
+
+@mixin content-container {
+    max-width: 1080px;
+    margin: 88px auto;
+}
+
+
+/* *** Images *** */
+@mixin arrow-img {
+    height: 24px;
+    width: 24px;
+    margin: 0 16px 0 8px;
+}
+
+@mixin click-arrows {
+    height: 30px;
+    width: 30px;
+    @content;
+    @include desktop {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+
+/* *** Buttons *** */
+@mixin btn-mobile {
+    height: 40px;
+    width: 185px;
+    background-color: $primary-color;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    margin: 56px 0 88px;
+    @content;    
+    @include tablet {
+        height: 55px;
+        width: 200px;
+        margin: 96px 0 18px;
+    }
+    @include desktop {
+        width: 275px;
+        margin: 96px 0 104px;
+    }
+}
+
+/* *** Text *** */
+@mixin h1-title {
+    font-size: 24px; 
+    line-height: 30px;
+    font-weight: 300;
+    color: $font-color;
+    @content;
+    @include tablet {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+@mixin card-title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $font-color;
+    @content;
+    @include tablet {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+@mixin card-text {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    color: $font-color;
+    @content;
+}
+
+@mixin side-text {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: $font-color;
+    @content;
+    @include tablet {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@mixin hover-effect {
+    color: $seperators-color;
+}
+
+/* *** Media Queries *** */
+@mixin tablet {
+    @media only screen and (min-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: $desktop-width) {
+        @content;
+    }
+}

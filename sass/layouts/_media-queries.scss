@@ -1,0 +1,17 @@
+/* **** Resizing containers **** */
+
+.filter-holder {
+    @include tablet {
+        width: 90%;
+        margin: 0 auto;
+    }
+    @include desktop {
+        @include content-container;
+    }
+}
+
+.salat-info {
+    display: flex;
+    justify-content: center;
+}
+

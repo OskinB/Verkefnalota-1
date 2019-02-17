@@ -1,0 +1,194 @@
+* {
+    font-family: $font-stack;
+    color: $font-color;    
+}
+
+/* *** INDEX *** */
+.page-title-holder {
+    margin: 3rem 1rem;
+    @include tablet {
+        margin-left: 48px;
+    }
+    @include desktop {
+        @include title-container;
+    }
+    h1 {
+        @include h1-title;
+    }
+    span {
+        font-size: 24px;
+        font-weight: 200; 
+        @include tablet {
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+}
+
+.filter-holder {
+    h2 {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        margin-top: 8px;
+        text-align: center;
+        @include tablet {
+            font-size: 22px;
+            line-height: 30px;
+        }
+        @include tablet {
+            font-size: 24px;
+            line-height: 32px;
+            margin-top: 16px;
+        }
+    }
+}
+
+.salat-holder {
+    p {
+        @include card-text;
+        text-align: center;
+        @include tablet {
+            width: 30%;
+        }
+    }
+    h2:hover {
+        @include hover-effect;
+        text-decoration: underline;
+    }
+}
+
+.salat-meal-left {
+    @include desktop {
+        width: 50%;
+    }
+    h2 {
+        @include card-title;
+        text-align: center;
+        margin-left: 1rem;
+        @include tablet {
+            width: 60%;
+        }
+    }
+    h3 {
+        @include side-text;
+        text-align: center;
+        margin-top: 8px;
+    }
+}
+
+.salat-meal-right {
+    @include desktop {
+        width: 50%;
+    }
+    h2 {
+        @include card-title;
+        text-align: center;
+        margin-right: 1rem;
+        @include tablet {
+            width: 60%;
+        }
+    }
+    h3 {
+        @include side-text;
+        text-align: center;
+        margin-top: 8px;
+    }
+}
+
+/* *** ITEM INFO *** */
+.title-holder {
+    @include tablet {
+        margin-left: 48px;
+    }
+    @include desktop {
+        @include title-container;
+    }
+    h1 {
+        @include h1-title;
+    }
+}
+
+.nutrition-holder {
+    h3 {
+        @include side-text;
+        text-transform: uppercase;
+        text-align: right;
+        width: 50%;
+        @include desktop {
+            margin-right: 32px; 
+        }
+    }
+    span {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 300;
+        text-transform: none;
+        text-align: center;
+        width: 50%;
+        @include desktop {
+            text-align: left;
+            margin-left: 32px; 
+        }
+    }
+    .nutrition-info {
+        justify-content: space-evenly;
+    }
+}
+
+.change-btn {
+    h3 {
+        @include card-title;
+        letter-spacing: 0.02em;
+    }
+    cursor: pointer;
+}
+
+.change-options {
+    h3 {
+        @include h1-title;
+        margin-left: 16px;
+    }
+    span {
+        @include side-text;
+        letter-spacing: 0.02em;
+    }
+}
+
+.btn-text {
+    @include side-text;
+    color: $font-color;
+    text-align: center;
+}
+
+/* *** TOTAL CALCULATION *** */
+.calc-title {
+    margin: 0 .25rem 0 1rem;
+    @include tablet {
+        margin-left: 48px;
+    }
+    @include desktop {
+        @include title-container;
+    }
+    h1 {
+        @include h1-title;
+        padding: 40px 0 24px;
+    }
+}
+
+.my-bowl {
+    h2 {
+        @include h1-title;
+        margin: 0 0 40px 16px;
+        @include tablet {
+            margin-left: 48px;
+        }
+        @include desktop {
+            text-align: center;
+        }
+    }
+    span {
+        @include side-text;
+        letter-spacing: 0.02em;
+    }
+}

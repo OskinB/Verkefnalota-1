@@ -1,0 +1,40 @@
+
+.dropdownText {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.option {
+    @include tablet {
+        width: 65%;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+/* *** Toggle Icons *** */
+.drop-left {
+    background-image: url('../../img/arrows-dark/arrow-left-2.png');
+    background-repeat: no-repeat;
+    @include click-arrows;
+    margin: 0 16px 0 8px;
+    @include tablet {
+        margin: 0 32px 0 24px;
+    }
+}
+
+.drop-down {
+    background-image: url('../../img/arrows-dark/arrow-down-3.png');
+    background-repeat: no-repeat;
+    @include click-arrows;
+    margin: 0 16px 0 8px;
+    @include tablet {
+        margin: 0 32px 0 24px;
+    }
+}
+

@@ -1,0 +1,45 @@
+
+/* *** INDEX *** */
+.filter-img {
+    height: 73px;
+    width: 110px;
+    border-radius: 8px;
+    @include tablet {
+        height: 113px;
+        width: 150px;
+    }
+    @include desktop {
+        height: 213px;
+        width: 290px;
+    }
+}
+
+.meal-img {
+    height: 140px;
+    width: auto;
+    @include tablet {
+        height: 200px;
+    }
+}
+  
+/* *** ITEM INFO *** */
+.title-holder {
+    img {
+        @include click-arrows;
+    }
+}
+.img-carousel {
+    .carousel-img {
+        height: 200px;
+        width: auto;
+    }
+    .carousel-arrow {
+        height: 24px;
+        width: 24px;
+    }
+}
+.change-btn {
+    img {
+        @include arrow-img;
+    }
+}

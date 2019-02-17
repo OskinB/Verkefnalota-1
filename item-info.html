@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/glo-fav.png" type="image/gif" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Gló Næring</title>
+</head>
+
+<body>
+    <header class="shadow mb-5">
+        <nav id="navbar-mobile" class="mobile-nav d-flex flex-row">
+            <div class="m-nav d-flex justify-content-center">
+                <img class="nav-logo" src="img/Glo-m-nav.png" alt="Gló logo">
+            </div>
+            <div class="m-nav2 d-flex justify-content-end align-items-center pr-4">
+                <img class="nav-menu" src="img/burger-icon.svg" alt="Menu">
+            </div>
+            <!-- <div class="dropdown-nav">
+                        <img src="" alt="close">
+                        <h2>Næringartafla</h2>
+                        <h2>Panta</h2>
+                        <div class="search-holder d-flex flex-row">
+                            <img src="" alt="Search">
+                            <h2>Leita</h2>
+                        </div>
+                        <div class="language">
+                            <h2>Íslenska</h2>
+                            <h2>English</h2>
+                        </div>
+                    </div> -->
+        </nav>
+
+    </header>
+
+
+    <main>
+        <section class="title-holder d-flex flex-row align-items-center">
+            <a class="mr-3 ml-3" href="index.html"><img src="img/arrows-dark/arrow-left-1.png" alt="Go back"></a>
+            <h1>Mexíkósk skál</h1>
+        </section>
+
+        <section class="meal-info">
+            <div class="nutrition-holder">
+                <div class="nutrition-info d-flex flex-row my-4">
+                    <h3>Orka <span>(kcal)</span></h3>
+                    <span>16</span>
+                </div>
+                <div class="nutrition-info d-flex flex-row my-4">
+                    <h3>Prótein <span>(gr)</span></h3>
+                    <span>2</span>
+                </div>
+                <div class="nutrition-info d-flex flex-row my-4">
+                    <h3>Salt <span>(gr)</span></h3>
+                    <span>0.5</span>
+                </div>
+                <div class="nutrition-info d-flex flex-row my-4">
+                    <h3>Fita <span>(gr)</span></h3>
+                    <span>2.8</span>
+                </div>
+                <div class="nutrition-info d-flex flex-row my-4">
+                    <h3>Sykur <span>(gr)</span></h3>
+                    <span>2</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carousell -->
+        <section>
+            <div class="carousel">
+                <img class="carousel-arrow carousel-btn" src="img/arrow-thin-left.png" data-target="previous" alt="Left"
+                    alt="Left">
+                <div class="carousel-viewport">
+                    <div class="carousel-wrapper ">
+                        <div class="carousel-slide">
+                            <div class="carousel-slide-content">
+                                <img class="carousel-img" src="img/img1.png" alt="Salat">
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-slide-content">
+                                <img class="carousel-img" src="img/meal-carousel.jpg" alt="Salat">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="carousel-arrow carousel-btn" src="img/arrow-thin-right.png" data-target="next" alt="Right"
+                    alt="Right">
+            </div>
+        </section>
+
+        <div class="change-menu-holder d-lg-flex flex-lg-row align-items-lg-baseline">
+            <section class="change-meal">
+                <div class="change-btn-dropdown"></div>
+            </section>
+
+            <section class="btn-holder d-flex justify-content-center justify-content-lg-end">
+                <a href="#" class="btn-add d-flex justify-content-center align-items-center">
+                    <div class="btn-text">
+                        Bæta skál við
+                    </div>
+                    <div class="btn-img">
+                        <img src="img/plus-icon.png" alt="Add">
+                    </div>
+                </a>
+            </section>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="total-calc">
+                    <section class="calc-title d-flex flex-row align-items-center justify-content-between">
+                        <h1>Heildar næring</h1>
+                        <img class="close-modal mr-4" onclick="closeModal()" src="img/arrows-dark/arrow-down-1.png"
+                            alt="Down">
+                    </section>
+                    <section class="nutrition-holder">
+                        <div class="nutrition-info d-flex flex-row my-4">
+                            <h3>Orka <span>(kcal)</span></h3>
+                            <span>925</span>
+                        </div>
+                        <div class="nutrition-info d-flex flex-row my-4">
+                            <h3>Prótein <span>(gr)</span></h3>
+                            <span>23</span>
+                        </div>
+                        <div class="nutrition-info d-flex flex-row my-4">
+                            <h3>Salt <span>(gr)</span></h3>
+                            <span>0.5</span>
+                        </div>
+                        <div class="nutrition-info d-flex flex-row my-4">
+                            <h3>Fita <span>(gr)</span></h3>
+                            <span>2.8</span>
+                        </div>
+                        <div class="nutrition-info d-flex flex-row my-4">
+                            <h3>Sykur <span>(gr)</span></h3>
+                            <span>2</span>
+                        </div>
+                    </section>
+                    <section class="d-flex justify-content-center my-5">
+                        <div class="calc-seperator"></div>
+                    </section>
+                    <section class="my-bowl">
+                        <h2>Skálin mín</h2>
+                        <div class="my-selection">
+                            <div class="d-flex justify-content-between align-items-center ml-4 mr-3 my-4">
+                                <div class="d-flex align-items-center">
+                                    <span>Mexíkósk skál</span>
+                                    <a href="item-info.html"><img class="ml-3" src="img/info-m-icon.png" alt="Info"></a>
+                                </div>
+                                <img class="option-img" src="img/arrows-dark/checkbox.png" alt="Added">
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center ml-4 mr-3 my-4">
+                                <span>Kirsuberjatómatar</span>
+                                <img class="option-img" src="img/arrows-dark/checkbox.png" alt="Added">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="btn-holder d-flex justify-content-center my-3">
+                        <a class="btn-add d-flex justify-content-center align-items-center my-5">
+                            <div class="btn-text">
+                                Panta skál
+                            </div>
+                            <div class="btn-img">
+                                <img src="img/plus-icon.png" alt="Add">
+                            </div>
+                        </a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer-mobile" class="d-flex align-items-center">
+        <div class="footer-holder d-flex flex-row align-items-center">
+            <div class="d-flex flex-row justify-content-start footer-info">
+                <h3>Heildar kaloríur:</h3>
+                <span>925 kcal</span>
+            </div>
+            <div id="myBtn" class="d-flex justify-content-end mr-4 footer-icon">
+                <img src="img/arrows-dark/arrow-left-1.png" alt="Arrow">
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/dropdown.js"></script>
+
+</body>
+
+</html>

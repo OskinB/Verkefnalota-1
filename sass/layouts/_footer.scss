@@ -1,0 +1,53 @@
+
+footer {
+    height: 40px;
+    width: 100%;
+    background-color: $footer-color;
+    position: fixed;
+    bottom: 0;
+    @include tablet {
+        height: 60px;
+    }
+    @include desktop {
+        height: 100px;
+    }
+    .footer-holder {
+        @include desktop {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        h3 {
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 300;
+            text-align: center;
+            margin: 0 8px;
+            @include tablet {
+                font-size: 24px;
+                line-height: 30px;
+                // margin: 0 24px;
+            }
+        }
+        span {
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 400;
+            text-align: center;
+            letter-spacing: 0.02em;
+            @include tablet {
+                font-size: 24px;
+                line-height: 30px;
+            }
+        }
+        .footer-info {
+            width: 90%;
+        }
+        .footer-icon {
+            width: 10%;
+            img {
+                @include click-arrows;
+            }
+        }
+    }
+}
+

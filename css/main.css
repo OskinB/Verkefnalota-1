@@ -1,0 +1,905 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* *** Font Family *** */
+/* *** Text Colors *** */
+/* *** Button Colors *** */
+/* *** Background Colors *** */
+/* *** Media Queries *** */
+/* *** Containers *** */
+/* *** Images *** */
+/* *** Buttons *** */
+/* *** Text *** */
+/* *** Media Queries *** */
+/* *** ALL *** */
+.salat-space {
+  margin: 72px 0;
+}
+
+@media only screen and (min-width: 1000px) {
+  .salat-holder {
+    max-width: 1080px;
+    margin: 88px auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.hover-state:hover {
+  text-decoration: none;
+}
+
+.seperator-cards {
+  background-color: #29828D;
+  height: 4px;
+  width: 90%;
+}
+@media only screen and (min-width: 1000px) {
+  .seperator-cards {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+.title-holder {
+  margin: 64px 0 48px;
+}
+
+.change-menu-holder {
+  max-width: 1300px;
+  margin: 48px auto 120px;
+}
+
+.change-meal {
+  background-color: #F9F9F9;
+  border-radius: 5px;
+  padding: 16px 0;
+}
+@media only screen and (min-width: 1000px) {
+  .change-meal {
+    width: 80%;
+  }
+}
+
+.change-options {
+  margin: 80px 0 120px;
+}
+
+.total-calc {
+  background-color: #E6F4F1;
+}
+@media only screen and (min-width: 766px) {
+  .total-calc {
+    padding-bottom: 90px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .btn-holder {
+    width: 30%;
+    margin: 0 auto;
+  }
+}
+.btn-holder a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-holder a:hover {
+  transition: 0.3s ease-in-out;
+  box-shadow: 1px 1px 2px 2px #606060;
+}
+.btn-holder .btn-add {
+  height: 40px;
+  width: 185px;
+  background-color: #65B7C3;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  margin: 56px 0 88px;
+}
+@media only screen and (min-width: 766px) {
+  .btn-holder .btn-add {
+    height: 55px;
+    width: 200px;
+    margin: 96px 0 18px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .btn-holder .btn-add {
+    width: 275px;
+    margin: 96px 0 104px;
+  }
+}
+.btn-holder .btn-add .btn-text {
+  width: 80%;
+}
+.btn-holder .btn-add .btn-img {
+  width: 20%;
+}
+
+/* Customize the label (the container) */
+.checkbox-holder {
+  display: block;
+  position: relative;
+  padding-left: 37px;
+  margin-bottom: 22px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-holder input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../../img/icon-add.png");
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-holder input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-holder .checkmark:after {
+  left: 0px;
+  top: 0px;
+  background-image: url("../../img/arrows-dark/checkbox.png");
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 48px 0;
+}
+.carousel .carousel-arrow {
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+@media only screen and (min-width: 766px) {
+  .carousel .carousel-arrow {
+    margin: 0 48px;
+  }
+}
+.carousel .carousel-viewport {
+  width: 100%;
+  overflow: hidden;
+}
+@media only screen and (min-width: 766px) {
+  .carousel .carousel-viewport {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .carousel .carousel-viewport {
+    width: 15%;
+  }
+}
+.carousel .carousel-viewport .carousel-wrapper {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+.carousel .carousel-viewport .carousel-slide {
+  flex-basis: 100%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+.carousel .carousel-viewport .carousel-slide .carousel-slide-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .carousel-viewport .carousel-slide .carousel-slide-content img {
+  width: 100%;
+  height: auto;
+}
+
+/* *** INDEX *** */
+.filter-img {
+  height: 73px;
+  width: 110px;
+  border-radius: 8px;
+}
+@media only screen and (min-width: 766px) {
+  .filter-img {
+    height: 113px;
+    width: 150px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .filter-img {
+    height: 213px;
+    width: 290px;
+  }
+}
+
+.meal-img {
+  height: 140px;
+  width: auto;
+}
+@media only screen and (min-width: 766px) {
+  .meal-img {
+    height: 200px;
+  }
+}
+
+/* *** ITEM INFO *** */
+.title-holder img {
+  height: 30px;
+  width: 30px;
+}
+@media only screen and (min-width: 1000px) {
+  .title-holder img {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.img-carousel .carousel-img {
+  height: 200px;
+  width: auto;
+}
+.img-carousel .carousel-arrow {
+  height: 24px;
+  width: 24px;
+}
+
+.change-btn img {
+  height: 24px;
+  width: 24px;
+  margin: 0 16px 0 8px;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+
+/* *** INDEX *** */
+.page-title-holder {
+  margin: 3rem 1rem;
+}
+@media only screen and (min-width: 766px) {
+  .page-title-holder {
+    margin-left: 48px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .page-title-holder {
+    max-width: 1100px;
+    margin: 104px auto;
+  }
+}
+.page-title-holder h1 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000;
+}
+@media only screen and (min-width: 766px) {
+  .page-title-holder h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+.page-title-holder span {
+  font-size: 24px;
+  font-weight: 200;
+}
+@media only screen and (min-width: 766px) {
+  .page-title-holder span {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.filter-holder h2 {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  margin-top: 8px;
+  text-align: center;
+}
+@media only screen and (min-width: 766px) {
+  .filter-holder h2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+@media only screen and (min-width: 766px) {
+  .filter-holder h2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 16px;
+  }
+}
+
+.salat-holder p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: #000;
+  text-align: center;
+}
+@media only screen and (min-width: 766px) {
+  .salat-holder p {
+    width: 30%;
+  }
+}
+.salat-holder h2:hover {
+  color: #29828D;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 1000px) {
+  .salat-meal-left {
+    width: 50%;
+  }
+}
+.salat-meal-left h2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  margin-left: 1rem;
+}
+@media only screen and (min-width: 766px) {
+  .salat-meal-left h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+@media only screen and (min-width: 766px) {
+  .salat-meal-left h2 {
+    width: 60%;
+  }
+}
+.salat-meal-left h3 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  margin-top: 8px;
+}
+@media only screen and (min-width: 766px) {
+  .salat-meal-left h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .salat-meal-right {
+    width: 50%;
+  }
+}
+.salat-meal-right h2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  margin-right: 1rem;
+}
+@media only screen and (min-width: 766px) {
+  .salat-meal-right h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+@media only screen and (min-width: 766px) {
+  .salat-meal-right h2 {
+    width: 60%;
+  }
+}
+.salat-meal-right h3 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  margin-top: 8px;
+}
+@media only screen and (min-width: 766px) {
+  .salat-meal-right h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+/* *** ITEM INFO *** */
+@media only screen and (min-width: 766px) {
+  .title-holder {
+    margin-left: 48px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .title-holder {
+    max-width: 1100px;
+    margin: 104px auto;
+  }
+}
+.title-holder h1 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000;
+}
+@media only screen and (min-width: 766px) {
+  .title-holder h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.nutrition-holder h3 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  text-align: right;
+  width: 50%;
+}
+@media only screen and (min-width: 766px) {
+  .nutrition-holder h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .nutrition-holder h3 {
+    margin-right: 32px;
+  }
+}
+.nutrition-holder span {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+  text-transform: none;
+  text-align: center;
+  width: 50%;
+}
+@media only screen and (min-width: 1000px) {
+  .nutrition-holder span {
+    text-align: left;
+    margin-left: 32px;
+  }
+}
+.nutrition-holder .nutrition-info {
+  justify-content: space-evenly;
+}
+
+.change-btn {
+  cursor: pointer;
+}
+.change-btn h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: 0.02em;
+}
+@media only screen and (min-width: 766px) {
+  .change-btn h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.change-options h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000;
+  margin-left: 16px;
+}
+@media only screen and (min-width: 766px) {
+  .change-options h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+.change-options span {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: 0.02em;
+}
+@media only screen and (min-width: 766px) {
+  .change-options span {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.btn-text {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #000;
+  color: #000;
+  text-align: center;
+}
+@media only screen and (min-width: 766px) {
+  .btn-text {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+/* *** TOTAL CALCULATION *** */
+.calc-title {
+  margin: 0 0.25rem 0 1rem;
+}
+@media only screen and (min-width: 766px) {
+  .calc-title {
+    margin-left: 48px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .calc-title {
+    max-width: 1100px;
+    margin: 104px auto;
+  }
+}
+.calc-title h1 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000;
+  padding: 40px 0 24px;
+}
+@media only screen and (min-width: 766px) {
+  .calc-title h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.my-bowl h2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000;
+  margin: 0 0 40px 16px;
+}
+@media only screen and (min-width: 766px) {
+  .my-bowl h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+@media only screen and (min-width: 766px) {
+  .my-bowl h2 {
+    margin-left: 48px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .my-bowl h2 {
+    text-align: center;
+  }
+}
+.my-bowl span {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: 0.02em;
+}
+@media only screen and (min-width: 766px) {
+  .my-bowl span {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.dropdownText {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+@media only screen and (min-width: 766px) {
+  .option {
+    width: 65%;
+    margin: 0 auto;
+  }
+  .option img {
+    width: 100%;
+  }
+}
+
+/* *** Toggle Icons *** */
+.drop-left {
+  background-image: url("../../img/arrows-dark/arrow-left-2.png");
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  margin: 0 16px 0 8px;
+}
+@media only screen and (min-width: 1000px) {
+  .drop-left {
+    height: 40px;
+    width: 40px;
+  }
+}
+@media only screen and (min-width: 766px) {
+  .drop-left {
+    margin: 0 32px 0 24px;
+  }
+}
+
+.drop-down {
+  background-image: url("../../img/arrows-dark/arrow-down-3.png");
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  margin: 0 16px 0 8px;
+}
+@media only screen and (min-width: 1000px) {
+  .drop-down {
+    height: 40px;
+    width: 40px;
+  }
+}
+@media only screen and (min-width: 766px) {
+  .drop-down {
+    margin: 0 32px 0 24px;
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  width: 100%;
+  top: 9%;
+}
+
+.calc-title img {
+  height: 30px;
+  width: 30px;
+}
+@media only screen and (min-width: 1000px) {
+  .calc-title img {
+    height: 40px;
+    width: 40px;
+  }
+}
+@media only screen and (min-width: 766px) {
+  .calc-title img {
+    margin: 0 32px 0 24px;
+  }
+}
+
+.calc-seperator {
+  background-image: url("../../img/seperator-center.png");
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 40%;
+}
+@media only screen and (min-width: 1000px) {
+  .calc-seperator {
+    background-image: url("../../img/seperator-large.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.my-selection img {
+  cursor: pointer;
+}
+@media only screen and (min-width: 766px) {
+  .my-selection {
+    width: 65%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .my-selection {
+    width: 30%;
+  }
+}
+.my-selection img {
+  border-radius: 8px;
+}
+
+/* **** Resizing containers **** */
+@media only screen and (min-width: 766px) {
+  .filter-holder {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .filter-holder {
+    max-width: 1080px;
+    margin: 88px auto;
+  }
+}
+
+.salat-info {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  background-color: #F9F9F9;
+}
+
+.m-nav {
+  width: 100%;
+}
+.m-nav .nav-logo {
+  height: 60px;
+  width: auto;
+}
+
+.m-nav2 .nav-menu {
+  height: 22px;
+  width: auto;
+}
+
+footer {
+  height: 40px;
+  width: 100%;
+  background-color: #E6F4F1;
+  position: fixed;
+  bottom: 0;
+}
+@media only screen and (min-width: 766px) {
+  footer {
+    height: 60px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  footer {
+    height: 100px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  footer .footer-holder {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
+footer .footer-holder h3 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 8px;
+}
+@media only screen and (min-width: 766px) {
+  footer .footer-holder h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+footer .footer-holder span {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+@media only screen and (min-width: 766px) {
+  footer .footer-holder span {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+footer .footer-holder .footer-info {
+  width: 90%;
+}
+footer .footer-holder .footer-icon {
+  width: 10%;
+}
+footer .footer-holder .footer-icon img {
+  height: 30px;
+  width: 30px;
+}
+@media only screen and (min-width: 1000px) {
+  footer .footer-holder .footer-icon img {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
